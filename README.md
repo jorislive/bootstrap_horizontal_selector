@@ -9,7 +9,7 @@ from standard dropdown to horizontal 'dot_below_selection_caption'.
   
 	e.g.
 	Select 1      Select 2		Select 3 
-                   ⌂
+                         ⌂
 usage:
 $('#someSelectorElement').horizontalSelector();
 
