@@ -1,0 +1,128 @@
+body {
+	
+}
+
+
+#selectorContainer{
+background: #EDEDED;
+	padding: 30px;
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#headerTop{
+	margin-top: 16px;
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#buttonContainer{
+	
+    margin-top: 30px;
+    right: 0px;
+    width: 300px;
+}
+
+.colorBlue {
+	color: rgba(66,139,202,1.00);
+}
+
+#sizeMe {
+	width: 94px;
+	height: 40px;
+	position: absolute;
+	margin-top: -30px;
+	right: 0px;
+	background: url("../img/size_me.png") no-repeat;
+}
+
+#logoAccow{
+	background: url("http://www.accow.nl/website/wp-content/themes/twentyfifteen/img/Logo_Accow_homepage.fw_.png") no-repeat;
+	filter:alpha(opacity=30);
+	background-size: 124px;
+	width: 260px;
+	height: 200px;
+}
+
+#headerTopTitle{
+  font-family: "chaparral-pro", sans-serif;
+  font-weight: 600;
+  font-size: 1.9em;
+}
+
+#headerTopTitle p {
+	margin: 0 0 -5px;
+}
+
+#headerTopRight {
+
+}
+
+
+
+.maxWidthSmall {
+	max-width: 400px;
+}
+
+.maxWidthMedium {
+	max-width: 900px;
+}
+
+.maxWidthLarge {
+	max-width: 2560px;
+}
+
+.fixedWidth{
+	width: 65px;
+	max-width: 65px;
+	min-width: 65px;
+	height: 65px;
+	max-height: 65px;
+	min-height: 65px;
+}
+
+th > h6 {
+	color: rgba(66,139,202,1.00);
+    text-align: center;
+}
+
+.first-hole{
+	background: url("../img/slider_1_off.png");
+}
+
+.between-hole{
+	background: url("../img/slider_2_off.png");
+}
+
+.last-hole{
+	background: url("../img/slider_5_off.png");
+}
+
+.first-hole.selected-hole{
+	background: url("../img/slider_1_on.png");
+}
+
+.between-hole.selected-hole{
+	background: url("../img/slider_2_on.png");
+}
+
+.last-hole.selected-hole{
+	background: url("../img/slider_5_on.png");
+}
+
+.hole-spacer{
+	background: url("../img/slider_repeat.png");
+	background-repeat: repeat-x;
+	width: 200px;
+}
+
+.between-holes{
+	background: url("../img/slider_2_off.png");
+}
+
+#selectorOptions > td{
+	height: 65px;
+} 
