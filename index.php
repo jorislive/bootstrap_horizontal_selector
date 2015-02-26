@@ -102,11 +102,9 @@
 $("select").horizontalSelector();
 
 $("#selectorContainer").resizable({
-	  // Quick and dirty solution...
-      minWidth: 682,
-	  minHeight: 900,
-	  maxHeight: 900
-      //handles: 'e, w'
+      minHeight: 660,
+	  maxHeight: 660,
+	  minWidth: 682,
 });
 
 $("#submit").click(function(event){
