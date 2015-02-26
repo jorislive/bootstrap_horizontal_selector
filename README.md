@@ -10,6 +10,10 @@ from standard dropdown to horizontal 'dot_below_selection_caption'.
 	e.g.
 	Select 1      Select 2		Select 3 
                       ⌂
+
+#example
+<a href="http://www.accow.nl/bootstrap_horizontal_selector/">http://www.accow.nl/bootstrap_horizontal_selector/</a>
+
 #usage:
 $('select').horizontalSelector();
 
