@@ -44,7 +44,7 @@
 
 </div>
 
-<div id="selectorContainer" data-hole="<?php echo $hole_selected ?>">
+<div id="selectorContainer">
 
 <form id="testForm">
 
