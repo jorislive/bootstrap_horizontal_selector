@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+
 	<meta charset="UTF-8">
 	<title>Horizontal_Selector Test</title>
 	
@@ -22,6 +23,7 @@
 	<!-- Horizontal Slider -->
 	<link rel="stylesheet" type="text/css" href="css/horizontal_selector.css">
 	<script src="js/horizontal_selector.js"></script>
+
 </head>
 <body>
 
