@@ -1,15 +1,13 @@
-// Functionality
-// This Jquery Extension lets you transform a standard html <select> element 
-// from standard dropdown to horizontal 'dot_below_selection_caption'.
-//  
-//	e.g.
-//	Select 1      Select 2		Select 3 
-//                   ⌂
-//  usage:
-//  $('#someSelectorElement').horizontalSelector();
-//
-//  License: MIT
-//  Written by: Joris Wenting 2015
+/*
+ * Jquery Horizontal Selector v0.4
+ * 
+ *
+ * Copyright 2015, Joris Wenting
+ * https://www.accow.nl/jquery_horizontal_selector/
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+*/
 
 jQuery.fn.extend({
 	
