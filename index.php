@@ -55,9 +55,8 @@
 
 <form id="testForm">
 
-<select id="testSelectorA" name="testSelector">
-  <option value="0">Volvo</option>
-  <option value="1">Saab</option>
+<select id="testSelectorA" name="testSelectorA">
+  <option value="1">Volvo</option>
   <option value="2" >Mercedes</option>
   <option value="3">Audi</option>
   <option value="4" >Masserati</option>
@@ -67,23 +66,23 @@
   <option value="8">Volkswagen</option>  
 </select>
 
-<select id="testSelectorD" name="testSelector4">
-  <option value="0" >Never</option>
-  <option value="1" >Almost Never</option>
-  <option value="2" >Sometimes</option>
-  <option value="3" >Often</option>
-  <option value="4" >Always</option>
+<select id="testSelectorD" name="testSelectorB">
+  <option value="1" >Never</option>
+  <option value="2" >Almost Never</option>
+  <option value="3" >Sometimes</option>
+  <option value="4" >Often</option>
+  <option value="5" >Always</option>
 </select>
 
-<select id="testSelectorE" name="testSelector4">
-  <option value="0" >One</option>
-  <option value="1" selected>Two</option>
-  <option value="2" >Three</option>
+<select id="testSelectorE" name="testSelectorC">
+  <option value="1" >One</option>
+  <option value="2" selected>Two</option>
+  <option value="3" >Three</option>
 </select>
 
-<select id="testSelectorF" name="testSelector4">
-  <option value="0" >Yes</option>
-  <option value="1" >No</option>
+<select id="testSelectorF" name="testSelectorD">
+  <option value="1" >Yes</option>
+  <option value="0" >No</option>
 </select>
 
 
