@@ -3,7 +3,9 @@
 <head>
 
 	<meta charset="UTF-8">
-	<title>Horizontal_Selector Test</title>
+	<title>Accow - Bootstrap Horizontal Selector Demo</title>
+	
+	<link rel="shortcut icon" href="http://www.accow.nl/website/favicon.ico" type="image/x-icon" />
 	
 	<!-- Adobe Typekit -->
 	<script src="//use.typekit.net/idq7tbo.js"></script>
@@ -100,6 +102,10 @@
 <script>
 
 $("select").horizontalSelector();
+
+$("#logoAccow").click(function(){
+	window.location.href = "http://www.accow.nl";
+});
 
 $("#selectorContainer").resizable({
       minHeight: 660,
