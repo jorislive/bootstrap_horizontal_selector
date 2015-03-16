@@ -30,9 +30,8 @@ jQuery.fn.extend({
 		
 		//$(this).hide();
 		
-		var selectorId = $(this).attr("id");
-		var hashtagSelectorId = "#" + selectorId;
-		$(hashtagSelectorId).addClass("hs-binded");
+		var selectorName = $(this).attr("name");
+		$("select[name='" +  selectorName + "']").addClass("hs-binded");
 		var optionValueArray = optionValues($(this));
 		var optionHtmlArray = optionHtmls($(this));
 		var numberOfOptions = $(this).children().size();
@@ -40,27 +39,27 @@ jQuery.fn.extend({
 		var currentSelected = $(this).val();
 		construct();
 		setSelected(currentSelected);
-		setSelected(currentSelected, selectorId)
+		setSelected(currentSelected, selectorName)
 			
 		// Events
 		$(function(){
 
 			$("td.hole").click(function(){
-				var destinationId = $(this).attr("selector-id");
-				var previousSelected = "td.selected-hole[selector-id='" + destinationId + "']";
+				var destinationName = $(this).attr("selector-name");
+				var previousSelected = "td.selected-hole[selector-name='" + destinationName + "']";
 				$(previousSelected).removeClass("selected-hole");			
 				$(this).addClass("selected-hole");
 				var newValue = $(this).attr("option-id");
-				originalSelect = "#" + destinationId;
+				originalSelect = "select[name='" +  destinationName + "'";
 				$(originalSelect).val(newValue);
 			});
 			
 			$(".hs-binded").change(function(){	
-				var destinationId = $(this).attr("id");		
-				var previousSelected = "td.selected-hole[selector-id='" + destinationId + "']";
+				var destinationName = $(this).attr("name");		
+				var previousSelected = "td.selected-hole[selector-name='" + destinationName + "']";
 				$(previousSelected).removeClass("selected-hole");
 				var newValue = $(this).val();
-				var selectHole = "td[option-id='" + newValue + "'][selector-id='" + destinationId + "']";
+				var selectHole = "td[option-id='" + newValue + "'][selector-name='" + destinationName + "']";
 				$(selectHole).addClass("selected-hole");
 			});
 			
@@ -85,19 +84,19 @@ jQuery.fn.extend({
 				
 				var x = 0
 				
-				newHtml += "<td option-id='"+ optionValueArray[x] + "' selector-id='" + selectorId + "' class='hole first-hole'></td>";
+				newHtml += "<td option-id='"+ optionValueArray[x] + "' selector-name='" + selectorName + "' class='hole first-hole'></td>";
 				newHtml += "<td class='hole-spacer'></td>";
 				
 				x++;
 				
 				for(i=1; i < numberOfOptions - 1; i++){
 								
-						newHtml += "<td option-id='" + optionValueArray[i] + "' selector-id='" + selectorId + "' class='hole between-hole'></td>";
+						newHtml += "<td option-id='" + optionValueArray[i] + "' selector-name='" + selectorName + "' class='hole between-hole'></td>";
 						newHtml += "<td class='hole-spacer'></td>";	
 						x++;
 				}
 				
-				newHtml += "<td option-id='"+ optionValueArray[x] + "' selector-id='" + selectorId + "' class='hole last-hole'></td>";
+				newHtml += "<td option-id='"+ optionValueArray[x] + "' selector-name='" + selectorName + "' class='hole last-hole'></td>";
 				
 				newHtml += "</tr>";
 				
@@ -124,8 +123,8 @@ jQuery.fn.extend({
 			return array;
 		};
 		
-		function setSelected(selectedValue, destinationId){
-			var selectHole = "td[option-id='" + selectedValue + "'][selector-id='" + destinationId + "']";
+		function setSelected(selectedValue, destinationName){
+			var selectHole = "td[option-id='" + selectedValue + "'][selector-name='" + destinationName + "']";
 			$(selectHole).addClass("selected-hole");
 		}	
 	}

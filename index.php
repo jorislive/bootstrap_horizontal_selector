@@ -38,7 +38,7 @@
 	<td id="logoAccow">&nbsp;</td>
 	<td id="headerTopTitle" class=".tk-expo-sans-pro">
 	<p class="colorBlue">&LT;script&GT;</p>
-	<p>&nbsp;&nbsp;&nbsp;&nbsp;$("select").horizontalSelector();</p>
+	<p id="selectionText">&nbsp;&nbsp;&nbsp;&nbsp;$("select").horizontalSelector();</p>
 	<p class="colorBlue">&LT;/script&GT;</p>
 	
 	
@@ -55,7 +55,7 @@
 
 <form id="testForm">
 
-<select id="testSelectorA" name="testSelectorA">
+<select name="testSelectorA">
   <option value="1">Volvo</option>
   <option value="2" >Mercedes</option>
   <option value="3">Audi</option>
@@ -66,7 +66,7 @@
   <option value="8">Volkswagen</option>  
 </select>
 
-<select id="testSelectorD" name="testSelectorB">
+<select name="testSelectorB">
   <option value="1" >Never</option>
   <option value="2" >Almost Never</option>
   <option value="3" >Sometimes</option>
@@ -74,23 +74,25 @@
   <option value="5" >Always</option>
 </select>
 
-<select id="testSelectorE" name="testSelectorC">
+<select name="testSelectorC">
   <option value="1" >One</option>
   <option value="2" selected>Two</option>
   <option value="3" >Three</option>
 </select>
 
-<select id="testSelectorF" name="testSelectorD">
+<select name="testSelectorE">
   <option value="1" >Yes</option>
   <option value="0" >No</option>
 </select>
 
+<button id="toggleHide" class="btn btn-primary btn-xs">Hide</button>
+<button id="toggleNarrow" class="btn btn-primary btn-xs">Narrow</button>
 
 
 </form>
 
 <div id="buttonContainer">
-<button id="submit" class="btn btn-primary-sm">Submit</button>
+<button id="submit" class="btn btn-primary">Submit</button>
 </div>
 
 <div id="sizeMe">&nbsp;</div>
@@ -101,6 +103,33 @@
 <script>
 
 $("select").horizontalSelector();
+
+$("#toggleHide").on("click",function(e){
+	e.preventDefault(); 
+	if($(this).html() == 'Hide'){
+		$("select").hide();
+		$(this).html('Show');
+		$("#selectionText").html("&nbsp;&nbsp;&nbsp;&nbsp;$(\"select\").horizontalSelector().hide();");
+	} else {
+		$("select").show();
+		$(this).html('Hide');
+		$("#selectionText").html("&nbsp;&nbsp;&nbsp;&nbsp;$(\"select\").horizontalSelector();");
+	}
+});
+
+$("#toggleNarrow").on("click",function(e){
+	e.preventDefault(); 
+	if($(this).html() == 'Narrow'){
+		$(this).html('Medium');
+		$(".hole-spacer").css("width", "1px");
+	} else if($(this).html() == 'Medium') {
+		$(this).html('Parent Width');
+		$(".hole-spacer").css("width", "28px");	
+	} else if($(this).html() == 'Parent Width') {
+		$(this).html('Narrow');
+		$(".hole-spacer").css("width", "");	
+	}
+});
 
 $("#logoAccow").click(function(){
 	window.location.href = "http://www.accow.nl";
