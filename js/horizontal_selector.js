@@ -12,10 +12,16 @@
 jQuery.fn.extend({
 	
 	horizontalSelector: function (){
+		selection = $(this);
 		$(this).each(function(){
 			$(this).buildSelector();
 		});
+		return selection;
 	}
+
+	
+
+
 });
 
 jQuery.fn.extend({
