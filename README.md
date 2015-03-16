@@ -15,15 +15,18 @@ from standard dropdown to horizontal 'dot_below_selection_caption'.
 <a href="http://www.accow.nl/bootstrap_horizontal_selector/">http://www.accow.nl/bootstrap_horizontal_selector/</a>
 
 #usage:
-$('select').horizontalSelector();
+
+    $('select').horizontalSelector();
 
 or
 
-$('#someSelectorElement').horizontalSelector();
+    $('#someSelectorElement').horizontalSelector();
 
-The plugin works with jquery chaining:
-        e.g. to hide the 'drop-down' select:
-        $('select').horizontalSelector().hide();
+The plugin works with jQuery Method Chaining:
+
+e.g. to hide the 'drop-down':
+
+    $('select').horizontalSelector().hide();
 
 
 #Installation:
