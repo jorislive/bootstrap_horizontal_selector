@@ -22,8 +22,8 @@ or
 $('#someSelectorElement').horizontalSelector();
 
 The plugin works with jquery chaining:
-	e.g. to hide the 'drop-down' select:
-	$('select').horizontalSelector().hide();
+        e.g. to hide the 'drop-down' select:
+        $('select').horizontalSelector().hide();
 
 
 #Installation:
