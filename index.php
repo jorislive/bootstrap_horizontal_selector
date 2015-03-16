@@ -68,7 +68,7 @@
 
 <select name="testSelectorB">
   <option value="1" >Never</option>
-  <option value="2" >Almost Never</option>
+  <option value="2" >Seldom</option>
   <option value="3" >Sometimes</option>
   <option value="4" >Often</option>
   <option value="5" >Always</option>
