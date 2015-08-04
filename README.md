@@ -27,16 +27,16 @@ The plugin works with jQuery Method Chaining:
 
 e.g. to hide the 'drop-down':
 
-    $('select').horizontalSelector().hide();
+`$('select').horizontalSelector().hide();`
 
-
-#Installation:
+Installation
+------------
 two dependencies:<br>
 Jquery 2.1.3 and above <br>
 Bootstrap 3.3.2 and above <br> <br>
 
-Copy the CSS and Javascript files to their respective directories:<br>
-Put the links to the CSS and JS below the Jquery and Bootstrap includes,<br> <br>
+Copy the CSS and Javascript files to their respective directories:
+Put the links to the CSS and JS below the Jquery and Bootstrap includes,
 
 that's it!
 
