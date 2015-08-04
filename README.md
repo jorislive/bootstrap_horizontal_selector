@@ -1,8 +1,8 @@
 bootstrap_horizontal_selector
 -----------------------------
-Bootstrap Horizontal Selector
-License: MIT
-Copyright: 2015 Joris Wenting
+Bootstrap Horizontal Selector<br>
+License: MIT<br>
+Copyright: 2015 Joris Wenting<br>
 
 Functionality
 -------------
