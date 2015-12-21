@@ -1,20 +1,20 @@
-bootstrap_horizontal_selector
+# bootstrap_horizontal_selector
 -----------------------------
 Bootstrap Horizontal Selector<br>
 License: MIT<br>
 Copyright: 2015 Joris Wenting<br>
 
-Functionality
+# Functionality
 -------------
 This Jquery/Bootstrap Extension lets you transform a standard html `<select>` element 
 from standard dropdown to horizontal 'dot_below_selection_caption'.
 
-Example
+# Example
 -------
 [http://www.accow.nl/bootstrap_horizontal_selector/]
 (http://www.accow.nl/bootstrap_horizontal_selector/)
 
-Usage:
+# Usage:
 ------
 
 `$('select').horizontalSelector();`
@@ -29,7 +29,7 @@ e.g. to hide the 'drop-down':
 
 `$('select').horizontalSelector().hide();`
 
-Installation
+# Installation
 ------------
 two dependencies:<br>
 Jquery 2.1.3 and above <br>
