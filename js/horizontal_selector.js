@@ -34,7 +34,7 @@ jQuery.fn.extend({
 		$("select[name='" +  selectorName + "']").addClass("hs-binded");
 		var optionValueArray = optionValues($(this));
 		var optionHtmlArray = optionHtmls($(this));
-		var numberOfOptions = $(this).children().size();
+		var numberOfOptions = $(this).children().length;
 		var parent = $(this).parent();
 		var currentSelected = $(this).val();
 		construct();
