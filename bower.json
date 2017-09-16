@@ -1,0 +1,31 @@
+{
+  "directory" : "public/vendor",
+  "name": "bootstrap-horizontal-selector",
+  "description": "Bootstrap Horizontal Selector",
+  "main": [
+      "js/horizontal_selector.js",      
+      "css/horizontal_selector.css"
+    ],
+  "license": "MIT",
+  "homepage": "https://github.com/jorislive/bootstrap_horizontal_selector",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+        "jquery": "*",
+        "jquery-ui": "*",
+        "bootstrap":"*"
+    },  
+    "keywords": [
+    "horizontal",
+    "selector"
+  ],
+  "authors": [
+    "jorislive"
+  ],  
+  "private": false
+}
