@@ -1,6 +1,6 @@
 {
   "directory" : "public/vendor",
-  "name": "bootstrap_horizontal_selector",
+  "name": "bootstrap-horizontal-selector",
   "description": "Bootstrap Horizontal Selector",
   "main": [
       "js/horizontal_selector.js",      
