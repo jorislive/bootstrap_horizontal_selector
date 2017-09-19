@@ -1,6 +1,5 @@
 # bootstrap_horizontal_selector
 -----------------------------
-![alt text](https://raw.githubusercontent.com/jorislive/bootstrap_horizontal_selector/master/assets/ORIGINAL.fw.png "Selector")
 ![alt text](https://raw.githubusercontent.com/jorislive/bootstrap_horizontal_selector/master/assets/screenshot.png "Screenshot")
 
 Bootstrap Horizontal Selector<br>
