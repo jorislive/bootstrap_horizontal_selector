@@ -9,11 +9,6 @@ Copyright: 2015 Joris Wenting<br>
 This Jquery/Bootstrap Extension lets you transform a standard html `<select>` element 
 from standard dropdown to horizontal 'dot_below_selection_caption'.
 
-# Example
--------
-[http://www.accow.nl/bootstrap_horizontal_selector/]
-(http://www.accow.nl/bootstrap_horizontal_selector/)
-
 # Usage:
 ------
 
