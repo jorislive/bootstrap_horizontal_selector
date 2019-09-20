@@ -51,7 +51,7 @@ jQuery.fn.extend({
 				$(this).addClass("selected-hole");
 				var newValue = $(this).attr("option-id");
 				originalSelect = "select[name='" +  destinationName + "'";
-				$(originalSelect).val(newValue);
+				$(originalSelect).val(newValue).trigger('change');
 			});
 			
 			$(".hs-binded").change(function(){	
