@@ -38,7 +38,7 @@ Bootstrap 3.3.2 and above <br> <br>
 Copy the CSS and Javascript files to their respective directories:
 Put the links to the CSS and JS below the Jquery and Bootstrap includes,
 
-that's it!
+that's it!!
 
 Have fun, and feel free to contribute
 
